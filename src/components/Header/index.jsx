@@ -1,5 +1,7 @@
+import { Container } from "./style";
+
 const Header = () => {
-  return <div>Hello world</div>;
+  return <Container>Colors Palette</Container>;
 };
 
 export default Header;

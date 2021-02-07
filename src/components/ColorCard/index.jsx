@@ -10,14 +10,18 @@ const ColorCard = ({ color, blockColor, isBlocked, copyToClipBoard }) => {
       className="color-card"
       color={color}
       textColor={textColor.isLight() ? "#000" : "#fff"}
-      onClick={copyToClipBoard}
     >
-      {color}
+      <div
+        onClick={copyToClipBoard}
+        title="Copiar para a área de transferência"
+      >
+        {color}
+      </div>
       <div onClick={blockColor}>
         {isBlocked ? (
-          <GiPadlock title="Bloqueado" />
+          <GiPadlock title="Clique para desbloquear" />
         ) : (
-          <GiPadlockOpen title="Livre" />
+          <GiPadlockOpen title="Clique para bloquear" />
         )}
       </div>
     </Container>

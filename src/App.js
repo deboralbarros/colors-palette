@@ -36,7 +36,7 @@ const App = () => {
     },
     {
       selector: ".color-card",
-      content: "Para copiar a cor, basta clicar no cartão",
+      content: "Para copiar a cor, basta clicar no texto da cor",
     },
   ];
 

@@ -69,7 +69,7 @@ const ColorsCard = () => {
   };
 
   useEffect(() => {
-    const colors = Array.from({ length: 5 }, () => ({
+    const colors = Array.from({ length: 6 }, () => ({
       color: generateColor(),
       isBlocked: false,
     }));
