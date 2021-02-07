@@ -1,70 +1,57 @@
-# Getting Started with Create React App
+# Colors Paletter
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Um website para auxiliar o desenvolvedor ou o designer a escolher cores para suas interfaces. Inspirado em uma das mais conhecidas ferramentas, [Coolors](https://coolors.co/) com algumas features a mais, como a criação de uma paleta de cores para utilizar em uma interface.
 
-## Available Scripts
+## Como contribuir
 
-In the project directory, you can run:
+Para contribuir, você terá que dar um fork neste repositório e clonar o seu fork em sua máquina.
 
-### `yarn start`
+Feito o fork e clone, você precisa entrar na pasta do projeto, em seu computador e instar as dependências do projeto, com o seguinte comando:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+```
+// com npm
+npm install
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+//com yarn
+yarn
+```
 
-### `yarn test`
+Então, você poderá rodar o projeto na sua máquina, com o seguinte comando:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```
+// com npm
+npm start
 
-### `yarn build`
+// com yarn
+yarn start
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Faça as suas modificações, commite-as e faça um pull request.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Futuras Features
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+<ul>
+  <li>Criação de paletas de cores, baseada em uma cor fornecida pelo usuário</li>
+  <li>Responsividade</li>
+  <li>Conversão para outras unidades, como hexadecimal</li>
+</ul>
 
-### `yarn eject`
+Novas features são bem-vindas :)
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## Tecnologias e bibliotecas usadas
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+[ReactJs](https://pt-br.reactjs.org/)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+[Styled Componentes](https://styled-components.com/)
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+[React Icons](https://react-icons.github.io/react-icons/)
 
-## Learn More
+[React Keyboard Event Handler](https://www.npmjs.com/package/react-keyboard-event-handler)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+[Reactour](https://github.com/elrumordelaluz/reactour)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+[React Notifications](https://www.npmjs.com/package/react-notifications)
 
-### Code Splitting
+[Tinycolor2](https://github.com/bgrins/TinyColor)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+</ul>

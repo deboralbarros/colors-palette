@@ -19,8 +19,8 @@ const ColorsCard = () => {
 
   const randomColors = (key) => {
     if (key === "enter") {
-      if (colors.length >= 20) {
-        alert("Não é possível adicionar mais cores");
+      if (colors.length >= 10) {
+        NotificationManager.warning("Não é possível adicionar mais cores");
 
         return;
       }
