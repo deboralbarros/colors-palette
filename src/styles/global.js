@@ -7,4 +7,12 @@ export default createGlobalStyle`
         outline: none;
         font-family: 'Noto Sans JP'
     }
+
+    #main-container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
 `;

@@ -5,8 +5,17 @@ import tinycolor from "tinycolor2";
 const ColorCard = ({ color, blockColor, isBlocked }) => {
   const textColor = tinycolor(color);
 
+  const copyToClipboard = (text) => {
+    navigator.clipboard.writeText(text);
+  };
+
   return (
-    <Container color={color} textColor={textColor.isLight() ? "#000" : "#fff"}>
+    <Container
+      className="color-card"
+      color={color}
+      textColor={textColor.isLight() ? "#000" : "#fff"}
+      onClick={() => copyToClipboard(color)}
+    >
       {color}
       <div onClick={blockColor}>
         {isBlocked ? (

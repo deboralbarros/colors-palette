@@ -9,10 +9,10 @@ export const Container = styled.div`
   align-items: center;
   justify-content: center;
   color: ${({ textColor }) => textColor};
+  cursor: pointer;
 
   div {
     padding: 10px;
-    cursor: pointer;
 
     svg {
       font-size: 32px;

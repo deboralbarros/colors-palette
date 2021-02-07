@@ -4,7 +4,7 @@ import tinycolor from "tinycolor2";
 
 import ColorCard from "../ColorCard";
 
-import { Container, Text } from "./style";
+import { Container } from "./style";
 
 const generateColor = () => {
   return tinycolor.random().toRgbString();
@@ -69,13 +69,11 @@ const ColorsCard = () => {
 
   return (
     <>
-      <Text>Pressione Enter para adicionar uma cor</Text>
-      <Text>Pressione Espaço para gerar novas cores</Text>
       <KeyboardEventHandler
         handleKeys={["space", "enter"]}
         onKeyEvent={randomColors}
       />
-      <Container>
+      <Container className="colors-list">
         {colors.map(({ color, isBlocked }, index) => (
           <ColorCard
             key={index}
