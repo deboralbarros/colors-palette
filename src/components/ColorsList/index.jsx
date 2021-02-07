@@ -1,4 +1,8 @@
 import { useState, useEffect } from "react";
+import {
+  NotificationContainer,
+  NotificationManager,
+} from "react-notifications";
 import KeyboardEventHandler from "react-keyboard-event-handler";
 import tinycolor from "tinycolor2";
 
@@ -58,6 +62,12 @@ const ColorsCard = () => {
     setColors(filterArray);
   };
 
+  const copyToClipboard = (color) => {
+    navigator.clipboard.writeText(color);
+
+    NotificationManager.success("Copiado para a área de transferência");
+  };
+
   useEffect(() => {
     const colors = Array.from({ length: 5 }, () => ({
       color: generateColor(),
@@ -80,9 +90,12 @@ const ColorsCard = () => {
             isBlocked={isBlocked}
             color={color}
             blockColor={() => blockColor(color)}
+            copyToClipBoard={() => copyToClipboard(color)}
           />
         ))}
       </Container>
+
+      <NotificationContainer />
     </>
   );
 };

@@ -34,6 +34,10 @@ const App = () => {
       content:
         "Para desbloquear novamente, basta apertar no botão com cadeado e o cartão de cor poderá ser randomizado novamente",
     },
+    {
+      selector: ".color-card",
+      content: "Para copiar a cor, basta clicar no cartão",
+    },
   ];
 
   return (
