@@ -1,14 +1,13 @@
 import { useState, useEffect } from "react";
 import KeyboardEventHandler from "react-keyboard-event-handler";
+import tinycolor from "tinycolor2";
 
 import ColorCard from "../ColorCard";
 
-import { Container } from "./style";
+import { Container, Text } from "./style";
 
 const generateColor = () => {
-  return `rgb(${Math.floor(Math.random() * 255)}, ${Math.floor(
-    Math.random() * 255
-  )}, ${Math.floor(Math.random() * 255)})`;
+  return tinycolor.random().toRgbString();
 };
 
 const ColorsCard = () => {
@@ -16,7 +15,7 @@ const ColorsCard = () => {
 
   const randomColors = (key) => {
     if (key === "enter") {
-      if (colors.length >= 10) {
+      if (colors.length >= 20) {
         alert("Não é possível adicionar mais cores");
 
         return;
@@ -60,44 +59,18 @@ const ColorsCard = () => {
   };
 
   useEffect(() => {
-    const firstColor = {
+    const colors = Array.from({ length: 5 }, () => ({
       color: generateColor(),
       isBlocked: false,
-    };
+    }));
 
-    const secondColor = {
-      color: generateColor(),
-      isBlocked: false,
-    };
-
-    const thirdColor = {
-      color: generateColor(),
-      isBlocked: false,
-    };
-
-    const fourthyColor = {
-      color: generateColor(),
-      isBlocked: false,
-    };
-
-    const fivethyColor = {
-      color: generateColor(),
-      isBlocked: false,
-    };
-
-    setColors([
-      firstColor,
-      secondColor,
-      thirdColor,
-      fourthyColor,
-      fivethyColor,
-    ]);
+    setColors(colors);
   }, []);
 
   return (
     <>
-      <h1>Pressione Enter para adicionar uma cor</h1>
-      <h1>Pressione Espaço para gerar novas cores</h1>
+      <Text>Pressione Enter para adicionar uma cor</Text>
+      <Text>Pressione Espaço para gerar novas cores</Text>
       <KeyboardEventHandler
         handleKeys={["space", "enter"]}
         onKeyEvent={randomColors}
